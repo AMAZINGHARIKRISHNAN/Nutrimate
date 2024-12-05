@@ -19,9 +19,9 @@ def local_css(file_name):
 local_css("styles.css")
 
 st.sidebar.title("Navigation")
-page_selection = st.sidebar.radio("Go to", ["Home","Meals Planner", "Tutorials", "Chatbot"])
+page_selection = st.sidebar.radio("Go to", ["Nutrify","Meals Planner", "Tutorials", "Chatbot"])
 
-if page_selection == "Home":
+if page_selection == "Nutrify":
     exec(open("Nutrition.py").read())
 
 elif page_selection == "Meals Planner":
